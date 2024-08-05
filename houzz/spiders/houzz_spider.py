@@ -8,13 +8,13 @@ class HouzzSpider(scrapy.Spider):
     name = "houzz_scraper"
     
     base_url="https://www.houzz.com"
-    start_urls = ["https://www.houzz.com/professionals/interior-designer/carter-lake-ia-us-probr0-bo~t_11785~r_4850531"]
+    start_urls = ["https://www.houzz.com/professionals/kitchen-and-bath-remodelers/project-type-bathroom-remodeling-probr1-bo~t_11825~sv_29156"]
 
     custom_settings = {
         'FEEDS': {
             'output.csv': {
                 'format': 'csv',
-                'overwrite': True,  # Set to True to overwrite the file if it already exists
+                'overwrite': False,  # Set to True to overwrite the file if it already exists
             },
         }
         }
